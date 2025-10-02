@@ -34,13 +34,27 @@ namespace oop01
             //else if (temp == Seas_on.Winter)
             //    Console.WriteLine("Winter December to February"); 
             #endregion
-            User u1= new User();
-            u1.permissions ^= Permission.read;
+            #region EX03
+            //User u1= new User();
+            //u1.permissions ^= Permission.read;
 
-            if( (u1.permissions & Permission.read) == Permission.read ) 
-                Console.WriteLine("equal");
-                else
-                    Console.WriteLine("not equal");
+            //if( (u1.permissions & Permission.read) == Permission.read ) 
+            //    Console.WriteLine("equal");
+            //    else
+            //        Console.WriteLine("not equal"); 
+            #endregion
+           Colors temp;
+            bool isparsed;
+            do
+            {
+                Console.WriteLine("Enter the color :");
+                isparsed = Enum.TryParse<Colors>(Console.ReadLine(), out temp);
+
+            }while(!isparsed);
+            if(temp == Colors.red || temp == Colors.green|| temp == Colors.blue)
+                Console.WriteLine("primary color");
+            else
+                Console.WriteLine("not primary color");
         }
     }
 }
