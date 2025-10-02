@@ -4,7 +4,14 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            #region EX01
+
+            Console.WriteLine("Days of week ");
+            foreach (WeekDays day in Enum.GetValues(typeof(WeekDays)))
+            {
+                Console.WriteLine(day);
+            }
+            #endregion
         }
     }
 }
