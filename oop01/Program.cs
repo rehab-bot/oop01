@@ -9,11 +9,11 @@ namespace oop01
 
 
             #region EX01
-            //Console.WriteLine("days of week ");
-            //foreach (WeekDays day in Enum.GetValues(typeof(WeekDays)))
-            //{
-            //    Console.WriteLine(day);
-            //}
+            Console.WriteLine("days of week ");
+            foreach (WeekDays day in Enum.GetValues(typeof(WeekDays)))
+            {
+                Console.WriteLine(day);
+            }
             #endregion
             #region EX02
 
@@ -45,18 +45,18 @@ namespace oop01
             //    Console.WriteLine("not equal");
             #endregion
             #region EX04
-            Colors temp;
-            bool isparsed;
-            do
-            {
-                Console.WriteLine("Enter the color :");
-                isparsed = Enum.TryParse<Colors>(Console.ReadLine(), out temp);
+            //Colors temp;
+            //bool isparsed;
+            //do
+            //{
+            //    Console.WriteLine("Enter the color :");
+            //    isparsed = Enum.TryParse<Colors>(Console.ReadLine(), out temp);
 
-            } while (!isparsed);
-            if (temp == Colors.red || temp == Colors.green || temp == Colors.blue)
-                Console.WriteLine("primary color");
-            else
-                Console.WriteLine("not primary color");
+            //} while (!isparsed);
+            //if (temp == Colors.red || temp == Colors.green || temp == Colors.blue)
+            //    Console.WriteLine("primary color");
+            //else
+            //    Console.WriteLine("not primary color");
             #endregion
         }
     }
